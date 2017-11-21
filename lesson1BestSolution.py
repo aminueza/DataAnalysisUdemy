@@ -8,10 +8,8 @@ DATAFILE = "beatles-diskography.csv"
 
 def parse_file(datafile):
     data = []
-    n = 0
     with open(datafile, "rb") as f:
         dline = csv.DictReader(f)
-        count = 0
         for line in dline:
                 data.append(line)
 
